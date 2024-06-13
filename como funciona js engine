@@ -1,0 +1,22 @@
+JavaScript Engine: Es el motor de JS, siempre corre en el navegador.
+Su función es interpretar el código JavaScript y convertirlo a Machine Code para que la máquina pueda entenderlo.
+
+Just in time compiler: Es la compilación en tiempo real que sucede en el proceso del Engine.
+
+El motor es la parte encargada de leer y ejecutar el código fuente. Cada uno de los principales 
+proveedores de navegadores tiene su propio motor. Mozilla Firefox tiene Spidermonkey, Microsoft 
+  Edge tiene Chakra/ChakraCore y Apple Safari llama a su motor JavaScriptCore. Google Chrome utiliza 
+V8, que también es el motor de Node.js. El lanzamiento del V8 en 2008 marcó un momento crucial en la 
+historia de los motores. V8 reemplazó la relativamente lenta interpretación de JavaScript del navegador.
+
+La razón detrás de esta mejora tan grande radica principalmente en la combinación de intérprete y compilador. 
+Hoy en día, los cuatro motores utilizan esta técnica. El intérprete ejecuta el código fuente casi de inmediato. 
+El compilador traduce el código fuente en código máquina que el sistema del usuario ejecuta de manera directa.
+
+A medida que el compilador genera el código de la máquina, aplica optimizaciones. Tanto la compilación como la 
+optimización dan como resultado una ejecución de código más rápida a pesar del tiempo extra necesario en la fase de compilación.
+
+La idea principal detrás de los motores modernos es combinar lo mejor de ambos mundos:
+
+Rápido inicio de la aplicación del intérprete.
+Rápida ejecución del compilador.
